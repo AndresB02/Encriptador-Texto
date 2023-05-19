@@ -1,0 +1,340 @@
+body {
+    background-color: black;
+}
+
+header {
+    width: 120px;
+    height: 48px;
+}
+
+.logo {
+    position: absolute;
+    left: 12.5%;
+    top: 3%;
+    bottom: 0%;
+    box-shadow: 0px 10px 52px -8px green;
+}
+
+/********** Inicia seccion izquierda *********/
+main {
+    display: flex;
+}
+
+.textArea {
+    width: 680px;
+    height: 288px;
+    margin-left: 380px;
+    margin-top: 120px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: white;
+    overflow: none;
+    background: transparent;
+    border:none;
+    resize: none;
+}
+
+.textArea::placeholder {
+    color: white;
+}
+
+.textArea:focus {
+    outline: none;
+}
+
+#terminosCondiciones {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    width: 232px;
+    height: 18px;
+    margin-left: 380px;
+    margin-top: 300px;
+}
+
+.exclamacion {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.terminosCondiciones {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: white;
+}
+
+.botonesEncriptador {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    margin-left: 380px;
+    margin-top: 340px;
+}
+
+.botonEncriptar {
+    width: 328px;
+    height: 67px;
+    background: darkgreen;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+}
+
+.botonDesencriptar {
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: black;
+    border: 1.5px solid darkgreen;
+}
+
+/********** Inicia seccion derecha *********/
+
+.seccionDerecha {
+    width: 400px;
+    height: 844px;
+    margin-left: 160px;
+    margin-top: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 52px -8px green;
+    border-radius: 32px;
+}
+
+.dibujo {
+    float: left;
+    width: 336px;
+    height: 304px;
+    margin-left: 32px;
+    margin-top: 153px;
+}
+
+.mensajeEncriptado {
+    float: left;
+    width: 336px;
+    height: 122px;
+    margin-left: 32px;
+    margin-top: 43px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    border: none;
+    resize: none;
+    background: transparent;
+    justify-content: space-between;
+}
+
+.mensajeEncriptado:focus {
+    outline: none;
+}
+
+.textoAviso {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    margin-left: 32px;
+    margin-top: 565px;
+}
+
+.botonCopiar {
+    box-sizing: border-box;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    margin-left: 35px;
+    margin-top: 739px;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    background: darkgreen;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        position: absolute;
+        left: 5.21%;
+        right: 90.74%;
+        top: 8%;
+        bottom: 91.16%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 1284px;
+    }
+    .textArea {
+        width: 680px;
+        height: 288px;
+        margin-left: 40px;
+        margin-top: 201px;
+    }
+    #terminosCondiciones {
+        display: flex;
+        gap: 8px;
+        position: absolute;
+        width: 232px;
+        height: 18px;
+        margin-left: 40px;
+        margin-top: 230px;
+    }
+    .dibujo {
+        display: none;
+    }
+    .seccionDerecha { 
+        position: absolute;
+        width: 688px;
+        height: 343px;
+        margin-left: 40px;
+        margin-top: 401px;
+    }
+    .botonesEncriptador {
+        position: absolute;
+        width: 680px;
+        height: 67px;
+        margin-left: 40px;
+        margin-top: 262px;
+    }
+    .mensajeEncriptado {
+        position: absolute;
+        width: 624px;
+        height: 180px;
+        margin-left: 32px;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+    .textoAviso {
+        position: absolute;
+        width: 624px;
+        height: 24px;
+        margin-left: 32px;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .botonCopiar {
+        position: absolute;
+        width: 624px;
+        height: 67px;
+        margin-left: 32px;
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .logo {
+        position: absolute;
+        left: 4.27%;
+        right: 87.62%;
+        top: 3.0%;
+        bottom: 95.91%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: auto;
+        height: 1700px;
+    }
+    .textArea {
+        width: 343px;
+        height: 624px;
+        margin-left: 14px;
+        margin-top: 130px;
+    }
+    #terminosCondiciones {
+        display: flex;
+        gap: 8px;
+        position: absolute;
+        width: 232px;
+        height: 18px;
+        margin-left: 18px;
+        margin-top: 70px;
+    }
+    .dibujo {
+        display: none;
+    }
+    .seccionDerecha {
+        position: absolute;
+        width: 343px;
+        height: 545px;
+        margin-left: 18px;
+        margin-top: 341px;
+    }
+    .botonesEncriptador {
+        display: flex;
+        width: 343px;
+        height: 158px;
+        margin-left: 18px;
+        margin-top: 110px;
+        flex-direction: column;
+    }
+    .mensajeEncriptado {
+        position: absolute;
+        width: 279px;
+        height: 432px;
+        margin-left: 32px;
+        margin-top: 45px;
+    }
+    .textoAviso {
+        position: absolute;
+        width: 263px;
+        height: 48px;
+        margin-left: 32px;
+        margin-top: 120px;
+        font-size: 20px;
+    }
+    .botonCopiar {
+        position: absolute;
+        width: 279px;
+        height: 67px;
+        margin-left: 30px;
+        margin-top: 440px;
+        display: run-in;
+    }
+}
+
+

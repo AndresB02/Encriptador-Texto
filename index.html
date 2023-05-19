@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+
+    <header>
+        <img src="media/image (1).png" alt="logo de alura" class="logo">
+    </header>
+
+    <main>
+
+        <section class="ladoIzquierdo">
+            <textarea class="textArea" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div id="terminosCondiciones">
+                <img src="media/exclamation-circle.png" alt="" class="exclamacion">
+                <p class="terminosCondiciones">Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botonesEncriptador">
+                <button class="botonEncriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="botonDesencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section id="ladoDerecho">
+            <div class="seccionDerecha">
+                <img src="media/Muñeco.png" alt="" class="dibujo">
+                <textarea class="mensajeEncriptado" id="textAreaDos" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p class="textoAviso">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="botonCopiar" class="botonCopiar" onclick="copiarTexto('.mensajeEncriptado')">Copiar</button>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="code.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
